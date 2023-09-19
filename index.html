@@ -5,57 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@500&family=Roboto+Condensed&display=swap');
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="left-side">
-            <img src="oldtrafford.jpeg" alt="stadium">
-        </div>
-        <div class="right-side">
-            <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            <p>Necessitatibus, commodi!</p>  
-            <p>Sign up now to get started.</p>
-            <p>You <em>know</em> you want to.</p>
-
-            <form action="#">
-                <div class="form left">
-                    <p class="form-title">Let's do this!</p>
-                    <div class="input">
-                        <label for="first-name">First name</label>
-                        <input type="text" name="first-name" id="first-name" required>
-                    </div>
-                    
-                    <div class="input">
-                        <label for="last-name">Last name</label>
-                        <input type="text" name="last-name" id="last-name">
-                    </div>
-                    
-                    <div class="input">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                    
-                    <div class="input">
-                        <label for="phone-number">Phone number</label>
-                        <input type="tel" name="phone-number" id="phone-number" minlength="9" maxlength="9">
-                    </div>
-                    
-                    <div class="input">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required>
-                    </div>
-                    
-                    <div class="input">
-                        <label for="confirm-password">Confirm password</label>
-                        <input type="password" name="confirm-password" id="confirm-password" required>
-                    </div>
-                </div>
-                <div class="left button"><button type="submit">Create Account</button></div>
-            </form>
-            <div class="log-in left"><p>Already have an account? <a href="#">Log in</a></p></div>
-
+    <div class="Stadium">
+        <img src="oldtrafford.jpeg">
+        <div class="logo">
+            <p>Red Devils</p>
         </div>
     </div>
+    <div class="main">
+        <div class="textContent">
+            <p class="big">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
+            <p class="big">You <em>know</em> you want to.</p>
+        </div>
+        <form action="" method="post">
+            <fieldset>
+                <p class="big">Let's do this!</p>
+                <div class="row1">
+                    <div>
+                        <label for="first_name">FIRST NAME</label>
+                        <input required type="text" id="first_name" placeholder="Your Name" name="first_name">
+                    </div>
+                   <div>
+                        <label for="last_name">LAST NAME</label>
+                        <input required type="text" id="last_name" name="last_name">
+                   </div>
+                </div>
+                <div class="row2">
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input required type="email" id="email" name="email">
+                    </div>
+                   <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input required type="tel" minlength="10" maxlength="10" name="phone">
+                   </div>
+                </div>
+                <div class="row3">
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input required type="password" id="password" autocomplete="new-password" name="password">
+                    </div>
+                    <div>
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input required type="password" id="confirm_password" autocomplete="new-password" name="confirm_password">
+                    </div>
+                </div>
+            </fieldset>
+            <input type="submit" id="submit" value="Create Account">
+        </form>
+        <div class="login">
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+    </div>
+    
 
     
 </body>
